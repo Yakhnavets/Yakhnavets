@@ -1,5 +1,5 @@
 import telebot
-bot = telebot.TeleBot('2022444664:AAFBZpdfjFs1CDyEmh7RM9APh19uOSlOiGE')
+bot = telebot.TeleBot('mmmmmm')
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
   if message.text == "Нахуй":
