@@ -1,9 +1,9 @@
 import telebot
-bot = telebot.TeleBot('mmmmmm')
+bot = telebot.TeleBot('токен')
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
-  if message.text == "Нахуй":
-      bot.send_message(message.from_user.id, "Привет, сам иди.")
+  if message.text == "Говно":
+      bot.send_message(message.from_user.id, "Жизнь твоя говно")
   elif message.text == "Писька":
       bot.send_message(message.from_user.id, "Писюн")
   else:
