@@ -1,5 +1,5 @@
 import telebot
-bot = telebot.TeleBot('токен')
+bot = telebot.TeleBot('2022444664:AAFBZpdfjFs1CDyEmh7RM9APh19uOSlOiGE')
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
   if message.text == "Говно":
