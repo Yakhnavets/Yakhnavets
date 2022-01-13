@@ -1,0 +1,36 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="css" href="{% static 'Main/css/style.css'%}">
+    <link rel="shortcut icon" href="{%static 'Main/images/ico.png' %}">
+    <title>{% block title  %} {% endblock %}</title>
+    <style>
+        body {
+         background: #3e8e99 url(/Hleb/Main/static/Main/images/IMG_6029.jpeg);
+         color: rgb(0, 0, 0); 
+        }
+       </style>
+</head>
+<body>
+    <h1>There's a few photos if mine</h1>
+    <nav class="container d-flex flex-column flex-md-row justify-content-between">
+
+        <a class="py-2 d-none d-md-inline-block" href="/">Main</a>
+        <a class="py-2 d-none d-md-inline-block" href="/about">About me</a>
+        <a class="py-2 d-none d-md-inline-block" href="/galery">Galery</a>
+        <a class="py-2 d-none d-md-inline-block" href="/contacts">Contacts</a>
+        <a class="btn btn-sm btn-outline-secondary" href="/login">Login</a>
+    </nav>
+
+      {% block content  %} {% endblock %}
+
+
+
+      
+</body>
+</html>
+
