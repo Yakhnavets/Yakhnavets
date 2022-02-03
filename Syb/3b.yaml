@@ -1,0 +1,19 @@
+conf_id: toys  # unique identifier - string (digits and lowercase Latin letters) 
+request: 
+  # URL of endpoint
+  url: http://example.com/toys?date_to={CURRENT_DATE('%Y-%m-%d')}&date_from={DATE_WITH_OFFSET('%Y-%m-%d')}   
+  date_offset:  # may be omitted 
+    days: 7  
+response:  # configure processing of HTTP response
+- id: toys # unique identifier - string (digits and lowercase Latin letters) 
+  path: toys  # path to entry containing data list 
+  sql_table: toys # name of SQL table to insert data 
+  fields:  
+  - origin: id 
+    sql_field: toy_id 
+  - origin: name 
+    sql_field: toy_name 
+  - origin: date 
+    sql_field: status_updated
+
+    #--------------------------------------------Task3/b
